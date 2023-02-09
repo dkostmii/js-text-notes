@@ -1,0 +1,78 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+
+  height: 100vh;
+
+  overflow: hidden;
+
+  gap: 1rem;
+}
+
+@media screen and (min-width: 480px) {
+  body {
+    padding: 0 25%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    padding: 0 256px;
+    box-sizing:border-box;
+    max-width: 768px;
+    margin: 0 auto;
+  }
+}
+
+body, input, button {
+  font-size: 1.2rem;
+}
+
+input, button {
+  padding: 0.5rem 0.75rem;
+}
+
+input[type="checkbox"] {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+label.checkbox{
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+label:not(.checkbox) {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+#sine:before, #sawtooth:before, #square:before, #triangle:before {
+  width: 24px;
+  height: 24px;
+  background-size: 24px 24px;
+  content: "";
+  display: block;
+}
+
+#sawtooth:before {
+  background-image: url(./img/sawtooth.svg);
+}
+
+#sine:before {
+  background-image: url(./img/sine.svg);
+}
+
+#square:before {
+  background-image: url(./img/square.svg);
+}
+
+#triangle:before {
+  background-image: url(./img/triangle.svg);
+}

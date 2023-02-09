@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Text Notes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <label>
+    Sequence
+    <input type="text" id="sequence" value="0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987 1597 2584 4181 6765 10946 17711 28657 46368">
+  </label>
+  <label>
+    BPM
+    <input type="number" id="bpm" min="1" max="2000" step="1" value="720" />
+  </label>
+  <label>
+    Waveform
+    <div class="waveform">
+      <button id="sine" disabled></button>
+      <button id="sawtooth"></button>
+      <button id="square"></button>
+      <button id="triangle"></button>
+    </div>
+  </label>
+  <label>
+    Pitch
+    <input type="range" id="pitch" min="100" max="12000" value="800" step="100" />
+  </label>
+  <label class="checkbox">
+    <input type="checkbox" id="loop">
+    Loop
+  </label>
+  <button id="toggle">Start</button>
+  <script src="index.js"></script>
+</body>
+</html>
